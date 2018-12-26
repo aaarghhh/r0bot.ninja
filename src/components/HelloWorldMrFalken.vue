@@ -126,7 +126,7 @@
                         case "contacts":
                             this.writeOnConsole("### CONTACTS ####", 100)
                             this.writeOnConsole("mail: giacomo@r0bot.ninja", 300)
-                            this.writeOnConsole("tel: +39 3478609151", 500)
+                            this.writeOnConsole("tel: +39 347XXXXXXXX", 500)
                             this.writeOnConsole(" ", 700)
                             return true
                             break;
