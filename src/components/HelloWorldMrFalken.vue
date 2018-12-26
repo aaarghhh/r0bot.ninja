@@ -63,6 +63,15 @@
                 console.log(this.myscanMap)
                 if(command.length>0)
                     switch(command.trim().toLowerCase()){
+                        case "forkme":
+                            this.writeOnConsole(" Just opening a new tab with the github repo",100)
+                            this.writeOnConsole(" Check if you ar blocking popups from this site.",400)
+                            this.writeOnConsole(" ",800)
+                            var self = this;
+                            setTimeout(function() { window.open("https://github.com/aaarghhh/r0bot.ninja", '_blank'); },2000);
+                            return true
+                            break;
+
                         case "linkedin":
                             this.writeOnConsole(" Just opening a new tab for the Giacomo' profile",100)
                             this.writeOnConsole(" Check if you ar blocking popups from this site.",400)
@@ -72,10 +81,11 @@
                             return true
                             break;
                         case "info":
+                            this.writeOnConsole("### INFO ####", 100)
                             this.writeOnConsole("I am a Software/Web Developer/Maker. My name is Giacomo Giallombardo and I live in Faenza. My previous experiences brought me to focus on IT security, Software Security Assesment and Penetration Testing. " +
                                 "I developed a trusted solution for Android Devices Security called Cleanvir. " +
                                 "I love programming in Python. " +
-                                "During my career i developed some software using these languages:",100)
+                                "During my career i developed some software using these languages:",200)
                             this.writeOnConsole(" ",3500)
                             this.writeOnConsole("- Python",3700)
                             this.writeOnConsole("- Javascript / jQuery / Vue",3800)
@@ -113,13 +123,20 @@
                             return true
                             break;
 
+                        case "contacts":
+                            this.writeOnConsole("### CONTACTS ####", 100)
+                            this.writeOnConsole("mail: giacomo@r0bot.ninja", 300)
+                            this.writeOnConsole("tel: +39 3478609151", 500)
+                            this.writeOnConsole(" ", 700)
+                            return true
+                            break;
+
                         case "help":
                             this.writeOnConsole("0. Help ", 100)
                             this.writeOnConsole("1. Linkedin ", 200)
                             this.writeOnConsole("2. Info",400)
-                            this.writeOnConsole("3. Bio", 550)
-                            this.writeOnConsole("4. Contatti", 600)
-                            this.writeOnConsole("5. Forkme on Github", 800)
+                            this.writeOnConsole("4. Contacts", 600)
+                            this.writeOnConsole("5. Forkme", 800)
                             this.writeOnConsole(" ", 900)
                             return true
                             break;
@@ -136,7 +153,9 @@
                         this.writeOnConsole("Hello "+this.typedText.trim(), 100)
                         this.writeOnConsole("Nice to meet you!", 200)
                         this.writeOnConsole("What can i do for you?", 300)
-                        this.writeOnConsole(" ")
+                        this.writeOnConsole(" ", 500)
+                        this.writeOnConsole("Type help for commands.", 800)
+                        this.writeOnConsole("Type help for commands.", 900)
                         this.lookingForResponse = null
                         return true
                         break;
