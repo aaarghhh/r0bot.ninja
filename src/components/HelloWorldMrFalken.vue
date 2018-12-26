@@ -203,7 +203,7 @@
                     this.writeOnConsole("Welcome to Giacomo' site. ", 1600)
                     this.writeOnConsole("This is an a simple website where you can't use the mouse in order to navigate it. Due to the power of an UI designed in 1982 this site is really un-responsive so you will be redirected in Giacomo Linkedin profile in a few seconds. Come back using a real pc if you want to play with me....  ", 1800)
                     this.writeOnConsole(" ", 5500)
-                    setTimeout(function() { window.location.href = 'https://www.linkedin.com/in/giacomogiallombardo/'; },15000);
+                    setTimeout(function() { window.location.href = 'https://www.linkedin.com/in/giacomogiallombardo/'; },20000);
                     var self = this;
                     setTimeout(function () {
                         self.showinput = true
@@ -283,7 +283,7 @@
                               this.writeOnConsole("guest@r0bot.ninja: " + this.typedText)
                               this.writeOnConsole(" ")
                               if (!this.checkCommand(this.typedText)) {
-                                  this.writeOnConsole("The command " + this.typedText + " doesn't exists !!!", 500)
+                                  this.writeOnConsole("The command " + this.typedText + " doesn't exists !!!", 100)
                                   this.writeOnConsole(" ", 200)
                               }
                               console.log("cleared input")
