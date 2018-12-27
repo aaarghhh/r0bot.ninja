@@ -3,9 +3,6 @@
       <div id="wargames">
         <hello-world-mr-falken></hello-world-mr-falken>
       </div>
-      <div id="footer" >
-          <a href="https://www.google.com">Fork me on github</a>
-      </div>
   </div>
 </template>
 
