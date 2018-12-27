@@ -167,7 +167,7 @@
                 }
             },
             openNewTab(url){
-                let newTab = window.open();
+                let newTab = window.open("about:blank", 'newtab');
                 newTab.location.href = url;
             },
             printBanner:function( mobile ){
