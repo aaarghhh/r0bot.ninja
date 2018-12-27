@@ -65,20 +65,20 @@
                     switch(command.trim().toLowerCase()){
                         case "forkme":case "5":
                             this.writeOnConsole(" Just opening a new tab with the github repo",100)
-                            this.writeOnConsole(" Check if you ar blocking popups from this site.",400)
+                            this.writeOnConsole(" Bye Bye !!!!! ",400)
                             this.writeOnConsole(" ",800)
                             var self = this;
                             //setTimeout(function() { window.open("https://github.com/aaarghhh/r0bot.ninja", '_blank'); },2000);
-                            setTimeout(function() { self.openNewTab("https://github.com/aaarghhh/r0bot.ninja"); },2000);
+                            setTimeout(function() { self.openNewTab("https://github.com/aaarghhh/r0bot.ninja"); },4000);
                             return true
                             break;
 
                         case "linkedin":case"1":
                             this.writeOnConsole(" Just opening a new tab for the Giacomo' profile",100)
-                            this.writeOnConsole(" Check if you ar blocking popups from this site.",400)
+                            this.writeOnConsole(" Bye Bye !!!!! ",400)
                             this.writeOnConsole(" ",800)
                             var self = this;
-                            setTimeout(function() { self.openNewTab ('https://www.linkedin.com/in/giacomogiallombardo/')  },2000);
+                            setTimeout(function() { self.openNewTab ('https://www.linkedin.com/in/giacomogiallombardo/')  },4000);
                             return true
                             break;
                         case "info":case "2":
@@ -167,8 +167,9 @@
                 }
             },
             openNewTab(url){
-                let newTab = window.open("about:blank", 'newtab');
-                newTab.location.href = url;
+                //let newTab = window.open("about:blank", 'newtab');
+                //newTab.location.href = url;
+                window.location.href = url
             },
             printBanner:function( mobile ){
 
