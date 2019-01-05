@@ -127,8 +127,10 @@
                         case "contacts":case"4":
                             this.writeOnConsole("### CONTACTS ####", 100)
                             this.writeOnConsole("mail: giacomo@r0bot.ninja", 300)
-                            this.writeOnConsole("tel: +39 347XXXXXXXX", 500)
-                            this.writeOnConsole(" ", 700)
+                            this.writeOnConsole("mail: giacomo.giallombardo@owasp.org", 500)
+                            this.writeOnConsole("mail: giacomo@r0bot.ninja", 700)
+                            this.writeOnConsole("xmpp: aaarghhh@jabber.ccc.de", 900)
+                            this.writeOnConsole(" ", 1100)
                             return true
                             break;
 
@@ -156,7 +158,6 @@
                         this.writeOnConsole("What can i do for you?", 300)
                         this.writeOnConsole(" ", 500)
                         this.writeOnConsole("Type help for commands.", 800)
-                        this.writeOnConsole("Type help for commands.", 900)
                         this.lookingForResponse = null
                         return true
                         break;
@@ -309,7 +310,7 @@
                               this.writeOnConsole("guest@r0bot.ninja: " + this.typedText)
                               this.writeOnConsole(" ")
                               if (!this.checkCommand(this.typedText)) {
-                                  this.writeOnConsole("The command \"" + this.typedText + "\" doesn't exists !!!", 100)
+                                  this.writeOnConsole("The command \"" + this.typedText + "\" doesn't exist !!!", 100)
                                   this.writeOnConsole(" ", 200)
                               }
                               console.log("cleared input")
