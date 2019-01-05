@@ -128,7 +128,6 @@
                             this.writeOnConsole("### CONTACTS ####", 100)
                             this.writeOnConsole("mail: giacomo@r0bot.ninja", 300)
                             this.writeOnConsole("mail: giacomo.giallombardo@owasp.org", 500)
-                            this.writeOnConsole("mail: giacomo@r0bot.ninja", 700)
                             this.writeOnConsole("xmpp: aaarghhh@jabber.ccc.de", 900)
                             this.writeOnConsole(" ", 1100)
                             return true
@@ -158,6 +157,7 @@
                         this.writeOnConsole("What can i do for you?", 300)
                         this.writeOnConsole(" ", 500)
                         this.writeOnConsole("Type help for commands.", 800)
+                        this.writeOnConsole(" ", 900)
                         this.lookingForResponse = null
                         return true
                         break;
@@ -241,7 +241,6 @@
                       }
 
                       self.myscanMap.push(mystringx)
-                      console.log("linee",self.numberOfLines)
                       if(self.myscanMap.length>self.numberOfLines)
                           self.myscanMap.shift()
                   },delay, mystring, trim);
@@ -251,7 +250,6 @@
                           this.writeOnConsole(mytext.substring(this.column-1, mytext.length),delay+this.calculateDelay(mytext.substring(this.column-1, mytext.length)),trim)
                       }
                       else {
-                          console.log("lunghezzaa",mytext.substring(this.column-1))
                           this.writeOnConsole(mytext.substring(this.column-1), delay+this.calculateDelay(mytext.substring(this.column-1)), trim)
                       }
                   }
@@ -260,8 +258,6 @@
 
                   var self = this;
                   setTimeout(function(mystringx,trim) {
-
-                      console.log("Qui",mystringx);
 
                       if(trim){
                           console.log("trimming")
