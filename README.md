@@ -1,1 +1,1 @@
-r0bot.ninja
+https://r0bot.ninja
