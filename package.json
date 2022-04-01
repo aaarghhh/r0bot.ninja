@@ -10,7 +10,7 @@
   "dependencies": {
     "core-js": "^3.8.3",
     "loadash": "^1.0.0",
-    "vue": "^2.5.17",
+    "vue": "^2.6.11",
     "vue-cli": "^2.9.6",
     "vue-viewport": "^0.0.1",
     "vue-viewports": "^3.1.2"
@@ -23,7 +23,7 @@
     "@vue/cli-service": "~5.0.4",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
     "root": true,
