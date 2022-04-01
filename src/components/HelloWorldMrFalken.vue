@@ -83,10 +83,10 @@
                             break;
                         case "info":case "2":
                             this.writeOnConsole("### INFO ####", 100)
-                            this.writeOnConsole("I am a Software/Web Developer/Maker. My name is Giacomo Giallombardo and I live in Faenza. My previous experiences brought me to focus on IT security, Software Security Assesment and Penetration Testing. " +
-                                "I developed a trusted solution for Android Devices Security called Cleanvir. " +
-                                "I love programming in Python. " +
-                                "During my career i developed some software using these languages:",200, true)
+                            this.writeOnConsole("I am a OSINT///CTI Analyst, Software Developer and also a Maker. My name is Giacomo and I live in Faenza. My previous experiences brought me to focus on IT security, Software Security Assessment and Penetration Testing. " +
+                                "On my spare time I like doing OSINT researches and \" Cyber Investigations\".. " +
+                                "I love programming in Python and GOLang Also." +
+                                "During my career i developed software using these languages:",200, true)
                             this.writeOnConsole(" ",3500)
                             this.writeOnConsole("- Python",3700)
                             this.writeOnConsole("- Javascript / jQuery / Vue",3800)
@@ -124,11 +124,16 @@
                             return true
                             break;
 
+                        case "cat .history":
+                            this.writeOnConsole("echo \"Nice try.. <3\"", 100)
+                            this.writeOnConsole(" ", 400)
+                            return true
+                            break;
+
                         case "contacts":case"4":
-                            this.writeOnConsole("### CONTACTS ####", 100)
+                            this.writeOnConsole("#### CONTACTS ####", 100)
                             this.writeOnConsole("mail: giacomo@r0bot.ninja", 300)
                             this.writeOnConsole("mail: giacomo.giallombardo@owasp.org", 500)
-                            this.writeOnConsole("xmpp: aaarghhh@jabber.ccc.de", 900)
                             this.writeOnConsole(" ", 1100)
                             return true
                             break;
